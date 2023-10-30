@@ -1,0 +1,37 @@
+
+DEFINATION OF ARTIFICIAL SATELLITE : 
+An artificial satellite is an object that people have made and launched into orbit using rockets. 
+There are currently over 3,000 active satellites orbiting the Earth.
+The size, altitude and design of a satellite depend on its purpose.
+
+Sizes and altitudes of satellites
+Satellites vary in size. Some cube satellites are as small as 10 cm. 
+Some communication satellites are about 7 m long and have solar panels that extend another 50 m.
+ The largest artificial satellite is the International Space Station (ISS).
+ The main part of this is as big as a large five-bedroom house, but including solar panels, it is as large as a rugby field.
+
+Altitudes of satellites above the Earth’s surface also vary. These are three common orbits:
+
+Low Earth orbit (LEO) – from 200 to 2,000 km, for example, the ISS orbits at 400 km with a speed of 28,000 km/hour, and time for one orbit is about 90 minutes.
+Medium Earth orbit (MEO) – most MEO satellites are at an altitude of 20,000 km, and time for one orbit is 12 hours.
+Geostationary orbit (GEO) – 36,000 km above the Earth. Time for one orbit is 24 hours. This is to match the rotation of the Earth so that the satellite appears to stay above the same point above the Earth’s surface. This is used for many communications and weather satellites.
+
+Types of satellites
+Navigation satellites
+The GPS (global positioning system) is made up of a minimum of 24 satellites (and allows for up to 32), that orbit at an altitude of 20,000 km above the surface of the Earth. The difference in time for signals received from four satellites is used to calculate the exact location of a GPS receiver on Earth.
+
+Communication satellites
+These are used for television, phone or internet transmissions, for example, the Optus D1 satellite is in a geostationary orbit above the equator and has a coverage footprint to provide signals to all of Australia and New Zealand.
+
+Weather satellites
+These are used to image clouds and measure temperature and rainfall. Both geostationary and low Earth orbits are used depending on the type of weather satellite. Weather satellites are used to help with more accurate weather forecasting.
+
+Earth observation satellites
+These are used to photograph and image the Earth. Low Earth orbits are mainly used so that a more detailed image can be produced.
+
+Astronomical satellites
+These are used to monitor and image space. A satellite such as the James Webb Space Telescope provides very sharp images of stars and distant galaxies. It operates in a halo orbit – between about 250,000 and 832,000 km, which keeps it out of both Earth and Moon's shadow. Other space telescopes include Hubble and Chandra.
+
+International Space Station (ISS)
+This is a habitable space laboratory. At an altitude of 400 km, the ISS travels at a speed of 28,000 km/h and orbits the Earth once every 92 minutes. Scientists inside the ISS are able to perform many valuable experiments in a microgravity environment.
+

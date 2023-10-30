@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My informationt</title>
+</head>
+
+<body>
+    <form>
+        <h1 style="background-color: rgba(0, 255, 255, 0.281); color: black; text-align: center;">BAY FORM</h1>
+<fieldset>
+<legend>PERSONAL INFORMATION</legend>
+Name:
+<br><input type="text" name="name" placeholder="your name"><br>
+Father Name:
+<br><input type="text" name="father name" placeholder="father name"><br>
+Date of Birth:
+<br><input type="date" name="dob" placeholder="enter ur date of birth" required><br>
+Gender:
+<br><input type="radio" name="gender" value="male" checked>male<br>
+<br><input type="radio" name="gender" value="female">female<br>
+Married:
+<br><input type="text" name="name" placeholder="yes/no"><br>
+</fieldset>
+
+<fieldset>
+    <legend>EDUCATION</legend>
+    <br><input type="checkbox" name="degree1" value="matric">Matric<br>
+    <br><input type="checkbox" name="degree2" value="intermediate">Intermediate<br>
+    <br><input type="checkbox" name="degree3" value="graduate">graduate<br>
+    <br><input type="checkbox" name="degree4" value="postgraduate">postgraduate<br>
+<BR><BR>
+    BEST EXAMS:
+    <select>
+        <option>matric</option>
+        <option>intermediate</option>
+        <option>graduate</option>
+        <option>postgraduate</option>
+    </select>
+    <br><br>
+School:
+<br><input name="dropdown" list="school">
+<datalist id="school">
+<option>ASSAS NATIONAL SCHOOL</option>
+<option>KIPS COLLEGE</option>
+</datalist>
+</fieldset>
+Submit:
+<br><input name="submit" type="submit" value="sign up"><br>
+Reset:
+<br><input name="reset" type="reset" value="reset"><br>
+
+<br><br>
+Password:
+<br><input type="password" name="Password" maxlength="10" required><br>
+<button name="button" onclick="alert('button is a danger')"> Click me</button>
+    </form>
+    
+</body>
+</html>

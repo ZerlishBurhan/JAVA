@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class AirplaneSeatAssignment {
+    private static char[][] airplaneSeats;
+
+    public static void main(String[] args) {
+        initializeSeatMap();
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Welcome to the Airplane Seat Assignment System");
+            System.out.println("Please select an option:");
+            System.out.println("1. Display Seat Map");
+            System.out.println("2. Assign a Seat");
+            System.out.println("3. Quit");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character after reading the integer
+
+            switch (choice) {
+                case 1:
+                    displaySeatMap();
+                    break;
+                case 2:
+                    assignSeat(scanner);
+                    break;
+                case 3:
+                    System.out.println("Thank you for using the Airplane Seat Assignment System. Goodbye!");
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+        }
+    }
+
+    private static void initializeSeatMap() {
+        airplaneSeats = new char[13][6];
+        for (int row = 0; row < 13; row++) {
+            for (int seat = 0; seat < 6; seat++) {
+                airplaneSeats[row][seat] = '*';
+            }
+        }
+    }
+
+    private static void displaySeatMap() {
+        System.out.println("       A B C   D E F");
+        for (int row = 0; row < 13; row++) {
+            String seatClass;
+            if (row < 2) {
+                seatClass = "First Class";
+            } else if (row < 7) {
+                seatClass = "Business Class";
+            } else {
+                seatClass = "Economy Class";
+            }
+
+            System.out.printf("Row %2d (%s): ", row + 1, seatClass);
+            for (int seat = 0; seat < 6; seat++) {
+                System.out.print(airplaneSeats[row][seat] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void assignSeat(Scanner scanner) {
+        System.out.println("Please enter the ticket type (first class, business class, or economy class):");
+        String ticketType = scanner.nextLine().toLowerCase();
+
+        System.out.println("Please enter the desired seat (e.g., 3A):");
+        String seat = scanner.nextLine().toUpperCase();
+
+        int row = Integer.parseInt(seat.substring(0, seat.length() - 1)) - 1;
+        int seatIndex = seat.charAt(seat.length() - 1) - 'A';
+
+        if (isValidTicketType(ticketType) && isValidSeat(row, seatIndex)) {
+            airplaneSeats[row][seatIndex] = 'X';
+            System.out.println("Seat assigned successfully.");
+        } else {
+            System.out.println("Invalid ticket type or seat selection. Seat assignment failed.");
+        }
+    }
+
+    private static boolean isValidTicketType(String ticketType) {
+        return ticketType.equals("first class") || ticketType.equals("business class") || ticketType.equals("economy class");
+    }
+
+    private static boolean isValidSeat(int row, int seatIndex) {
+        if (row >= 0 && row < 13 && seatIndex >= 0 && seatIndex < 6) {
+            if (row < 2 && airplaneSeats[row][seatIndex] == '*') {
+                return true;
+            } else if (row >= 2 && row < 7 && airplaneSeats[row][seatIndex] == '*') {
+               

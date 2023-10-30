@@ -1,0 +1,14 @@
+body{
+
+background-image:url(../images/image1.png);
+
+}
+#a2{
+    background-color: brown;
+    opacity:0.75 ;
+    border-top-style:double ;
+    border-left-style: ridge;
+    border-right-style: groove;
+    border-bottom-style: inherit;
+   
+}

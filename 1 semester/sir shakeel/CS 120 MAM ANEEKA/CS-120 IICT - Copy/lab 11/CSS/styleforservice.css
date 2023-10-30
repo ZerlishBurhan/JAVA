@@ -1,0 +1,9 @@
+body{
+   background-color: rgb(86, 128, 59);
+}
+#table,td{
+border-style: double;
+border-width:5px;
+border-collapse: collapse;
+
+}

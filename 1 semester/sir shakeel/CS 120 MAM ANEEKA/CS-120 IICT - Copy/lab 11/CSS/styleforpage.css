@@ -1,0 +1,30 @@
+#d1{
+background-color: rgb(35, 179, 184);
+border-left: 2px;
+width:50%;
+height:50%;
+
+}
+#d2{
+    background-color: rgb(187, 81, 178);
+    border-right: 2px;
+    width:50%;
+height:50%;
+float:right
+    
+    }
+    #d3{
+        background-color: rgb(35, 179, 184);
+        border-left: 2px;
+        width:50%;
+        height:50%;
+        float:right
+        }
+        #d4{
+            background-color: rgb(175, 55, 165);
+            border-right: 2px;
+            width:50%;
+            height:50%;
+            float:left
+            }
+            

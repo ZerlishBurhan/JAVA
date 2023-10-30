@@ -1,0 +1,32 @@
+h1{
+text-align: center;
+}
+
+
+img{
+    border-image: fill;
+
+}
+#p2{
+    background-color: rgb(45, 132, 167);
+    text-align: center;
+
+}
+#p1{
+    background-color: rgb(55, 140, 209);
+    text-align: center;
+
+}
+.mj{
+
+    background-color: rgb(80, 144, 228);
+    text-align: left;   
+}
+#p3{
+    background-image:url(m8.png);
+}
+#p4{
+    background-color: rgb(68, 122, 236);
+    text-align: center;
+
+}

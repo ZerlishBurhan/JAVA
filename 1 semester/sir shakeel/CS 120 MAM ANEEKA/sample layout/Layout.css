@@ -1,0 +1,58 @@
+
+
+body{
+
+    background-color: black;
+    font-family: Arial;
+}
+
+ul{
+
+    list-style-type: none;
+    overflow: hidden;
+    background-color: blue;
+
+}
+
+li{
+    margin-left: 0px;
+    float: left;
+    padding: 10px;;
+}
+a{
+    color: white;
+}
+
+#div1{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: white;
+    padding: 7px;
+}
+
+#h1{
+    text-align: center;
+}
+
+#p1{
+    text-align: center;
+    font-size: 25px;
+}
+#p2{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+#div2{
+    background-image: url('img.jpg');
+    width: 90%;
+    height: 730px;
+    margin: 0px auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+
+
+
+

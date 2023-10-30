@@ -1,0 +1,8 @@
+class as array
+
+arrays:
+.a collection of similar data elements stored at contiguous memory locations.
+.consective memory bolck
+.int is a premitive datat type
+.class mane behaves as a data type
+.

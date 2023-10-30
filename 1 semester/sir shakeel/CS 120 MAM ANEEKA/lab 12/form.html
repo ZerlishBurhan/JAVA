@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form</title>
+</head>
+<body>
+
+    <form>
+
+  <fieldset>
+
+    <legend>PERSONAL INFORMATION</legend>
+
+    Name : <br><input type="text" name="name" placeholder="enter your name"><br>
+
+Father name : <br><input type="text" name="name" placeholder="enter father name"><br>
+
+Email : <br><input type="text" name="email" placeholder="email@123.com"><br>
+
+date of birth :  <br><input type="date" name="DOB" required > <br>
+
+gender :
+ <br><input type="radio"  name="gender" value="male" checked>male<br>
+<input type="radio"  name="gender" value="female" >female<br>
+
+previous degree : 
+<br><input type="checkbox" name="degree1" value="matric">Matric <br>
+<input type="checkbox" name="degree2" value="intermediate">intermediate<br>
+<input type="checkbox" name="degree3" value="graduate">graduate <br>
+<input type="checkbox" name="degree4" value="postgraduate">postgraduate <br>
+</fieldset>
+
+
+  
+    Password:
+<br><input type="password" name="password" maxlength="10"><br>
+
+ Submit :
+<br><input type="submit" name="submit" value="sign up"><br>
+
+Reset :
+<br><input type="reset" name="reset" value="Reset"><br>
+
+Degree:
+<br><select>   
+<option>Matric</option>
+<option>Intermediate</option>
+<option>graduate</option>
+<option>postgraduate</option>
+</select><br>
+
+School:
+<br>
+    <input type="dropdown" list="school">
+<datalist id="school">
+<option>Intermediate</option>
+<option>graduate</option>
+</datalist>
+<button name="button" onclick="alert('you clicked the wrong button')"> Submit!</button>
+<button>click!</button>
+
+    </form>
+</body>
+</html>

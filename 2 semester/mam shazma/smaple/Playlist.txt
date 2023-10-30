@@ -1,0 +1,52 @@
+public class Playlist {
+    private String name;
+    private Song[] songs;
+    private int songCount;
+
+    public Playlist(String name, int maxSize) {
+        this.name = name;
+        this.songs = new Song[maxSize];
+        this.songCount = 0;
+    }
+
+    public void addSong(Song song) {
+        if (songCount < songs.length) {
+            songs[songCount] = song;
+            songCount++;
+        } else {
+            System.out.println("Playlist is full. Cannot add more songs.");
+        }
+    }
+
+    public void removeSong(Song song) {
+        int indexToRemove = -1;
+        for (int i = 0; i < songCount; i++) {
+            if (songs[i].equals(song)) {
+                indexToRemove = i;
+                break;
+            }
+        }
+
+        if (indexToRemove != -1) {
+            // Remove the song by shifting elements
+            for (int i = indexToRemove; i < songCount - 1; i++) {
+                songs[i] = songs[i + 1];
+            }
+            songs[songCount - 1] = null; // Set the last element to null
+            songCount--;
+        } else {
+            System.out.println("Song not found in the playlist.");
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void listSongs() {
+        System.out.println("Playlist: " + name);
+        for (int i = 0; i < songCount; i++) {
+            System.out.println(" - " + songs[i].getTitle() + " by " + songs[i].getArtist());
+        }
+    }
+}

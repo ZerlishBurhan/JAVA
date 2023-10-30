@@ -1,0 +1,146 @@
+class User:
+    def __init__(self, username):
+        self.__username = username
+
+    def create_playlist(self, name):
+        return Playlist(name)
+
+    def get_username(self):
+        return self.__username
+
+
+class Playlist:
+    def __init__(self, name):
+        self.__name = name
+        self.__songs = []
+
+    def add_song(self, song):
+        self.__songs.append(song)
+
+    def remove_song(self, song):
+        self.__songs.remove(song)
+
+    def get_name(self):
+        return self.__name
+
+
+class Song:
+    def __init__(self, title, artist, duration):
+        self.__title = title
+        self.__artist = artist
+        self.__duration = duration
+
+    def get_title(self):
+        return self.__title
+
+    def get_artist(self):
+        return self.__artist
+
+    def get_duration(self):
+        return self.__duration
+
+
+class Audio(Song):
+    def __init__(self, title, artist, duration, format):
+        super().__init__(title, artist, duration)
+        self.__format = format
+
+    def get_format(self):
+        return self.__format
+
+
+# Example usage
+user = User("john_doe")
+playlist = user.create_playlist("My Playlist")
+song1 = Song("Song 1", "Artist 1", 240)
+audio_song = Audio("Audio Song", "Audio Artist", 180, "MP3")
+
+playlist.add_song(song1)
+playlist.add_song(audio_song)
+
+print("User:", user.get_username())
+print("Playlist:", playlist.get_name())
+print("Songs in the playlist:")
+for song in playlist.songs:
+    print("- Title:", song.get_title(), ", Artist:", song.get_artist())
+
+print("Audio Song Format:", audio_song.get_format())
+//====================================================================
+class MusicPlayer:
+    def __init__(self):
+        self.__playlist = []
+        self.__currentSongIndex = -1
+
+    def play(self):
+        if 0 <= self.__currentSongIndex < len(self.__playlist):
+            print("Playing:", self.__playlist[self.__currentSongIndex].get_title())
+
+    def pause(self):
+        print("Pausing playback")
+
+    def next(self):
+        if self.__currentSongIndex < len(self.__playlist) - 1:
+            self.__currentSongIndex += 1
+            self.play()
+
+    def previous(self):
+        if self.__currentSongIndex > 0:
+            self.__currentSongIndex -= 1
+            self.play()
+
+    def add_to_playlist(self, song):
+        self.__playlist.append(song)
+
+    def remove_song(self, song):
+        if song in self.__playlist:
+            self.__playlist.remove(song)
+
+
+class Song:
+    def __init__(self, title, artist, duration):
+        self.__title = title
+        self.__artist = artist
+        self.__duration = duration
+
+    def get_title(self):
+        return self.__title
+
+    def get_artist(self):
+        return self.__artist
+
+    def get_duration(self):
+        return self.__duration
+
+
+class AudioSong(Song):
+    def __init__(self, title, artist, duration, format):
+        super().__init__(title, artist, duration)
+        self.__format = format
+
+    def get_format(self):
+        return self.__format
+
+
+class VideoSong(Song):
+    def __init__(self, title, artist, duration, resolution):
+        super().__init__(title, artist, duration)
+        self.__resolution = resolution
+
+    def get_resolution(self):
+        return self.__resolution
+
+
+# Example usage
+audio_song = AudioSong("Audio Song", "Audio Artist", 180, "MP3")
+video_song = VideoSong("Video Song", "Video Artist", 240, "1080p")
+
+player = MusicPlayer()
+player.add_to_playlist(audio_song)
+player.add_to_playlist(video_song)
+
+player.play()
+player.next()
+
+print("Audio Song Format:", audio_song.get_format())
+print("Video Song Resolution:", video_song.get_resolution())
+

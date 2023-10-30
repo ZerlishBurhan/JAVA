@@ -1,0 +1,38 @@
+FOR ME AND AHMAD 
+
+Vehicle Rental System:
+
+Classes: Vehicle, Rental, Customer
+Relationships: Customer rents Vehicle, Rental tracks Customer and Vehicle
+
+Student-Teacher Management:
+
+Classes: Student, Teacher, Course, Enrollment
+Relationships: Teacher teaches Course, Student enrolls in Course
+
+Music Player Application:
+
+Classes: Song, Playlist, User
+Relationships: User creates Playlist, Playlist contains Songs
+
+Simple Game System:
+
+Classes: Player, Game, Score
+Relationships: Player participates in Game, Game has Scores
+
+Weather App:
+
+Classes: Location, WeatherData, Forecast, User
+Relationships: User views WeatherData and Forecasts for a Location
+
+Employee Management System:
+
+Classes: Employee, Department, Project, Manager
+Relationships: Employee works in Department, Employee manages Project, Department has Manager
+
+Online Course Platform:
+
+Classes: Course, Instructor, Student, Enrollment
+Relationships: Instructor teaches Course, Student enrolls in Course, Enrollment tracks progress
+
+

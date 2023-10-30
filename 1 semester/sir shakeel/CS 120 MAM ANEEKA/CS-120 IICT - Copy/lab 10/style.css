@@ -1,0 +1,20 @@
+h1{
+    background-color: rgb(74, 90, 48);
+    text-align: center;
+       }
+    #p1{
+    text-align:center;
+    background-color: rgb(223, 109, 81);
+    }
+    #p2{
+    text-align: right;
+    background-color: rgb(184, 173, 22);
+    }
+    .text{
+        background-color: pink;
+        text-align: left;
+    }
+    .text2{
+        background-color: rgb(116, 43, 55);
+        text-align: center;
+    }

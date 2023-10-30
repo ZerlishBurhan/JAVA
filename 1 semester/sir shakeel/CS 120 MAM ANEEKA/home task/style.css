@@ -1,0 +1,12 @@
+
+.flex-container{
+display: flex;
+flex-flow: row;
+}
+
+.flex-item{
+border: 5px solid black;
+margin: 10px;
+padding: 50px;
+font-size:medium ;
+}
